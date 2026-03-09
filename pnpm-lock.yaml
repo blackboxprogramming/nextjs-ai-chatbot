@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@ai-sdk/gateway':
         specifier: ^1.0.15
-        version: 1.0.15(zod@3.25.76)
+        version: 1.0.15(zod@4.3.6)
       '@ai-sdk/provider':
         specifier: 2.0.0
         version: 2.0.0
       '@ai-sdk/react':
         specifier: 2.0.26
-        version: 2.0.26(react@19.0.0-rc-45804af1-20241021)(zod@3.25.76)
+        version: 2.0.26(react@19.0.0-rc-45804af1-20241021)(zod@4.3.6)
       '@ai-sdk/xai':
         specifier: 2.0.13
-        version: 2.0.13(zod@3.25.76)
+        version: 2.0.13(zod@4.3.6)
       '@codemirror/lang-javascript':
         specifier: ^6.2.2
         version: 6.2.3
@@ -73,7 +73,7 @@ importers:
         version: 0.10.0
       ai:
         specifier: 5.0.26
-        version: 5.0.26(zod@3.25.76)
+        version: 5.0.26(zod@4.3.6)
       bcrypt-ts:
         specifier: ^5.0.2
         version: 5.0.3
@@ -216,8 +216,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.1(react@19.0.0-rc-45804af1-20241021)
       zod:
-        specifier: ^3.25.76
-        version: 3.25.76
+        specifier: ^4.3.6
+        version: 4.3.6
     devDependencies:
       '@biomejs/biome':
         specifier: 2.2.2
@@ -2407,6 +2407,7 @@ packages:
   '@vercel/postgres@0.10.0':
     resolution: {integrity: sha512-fSD23DxGND40IzSkXjcFcxr53t3Tiym59Is0jSYIFpG4/0f0KO9SGtcp1sXiebvPaGe7N/tU05cH4yt2S6/IPg==}
     engines: {node: '>=18.14'}
+    deprecated: '@vercel/postgres is deprecated. If you are setting up a new database, you can choose an alternate storage solution from the Vercel Marketplace. If you had an existing Vercel Postgres database, it should have been migrated to Neon as a native Vercel integration. You can find more details and the guide to migrate to Neon''s SDKs here: https://neon.com/docs/guides/vercel-postgres-transition-guide'
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -4050,6 +4051,7 @@ packages:
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   throttleit@2.1.0:
     resolution: {integrity: sha512-nt6AMGKW1p/70DF/hGBdJB57B8Tspmbp5gfJ8ilhLnt7kkr2ye7hzD6NVG8GGErk2HWF34igrL2CXmNIkzKqKw==}
@@ -4349,53 +4351,53 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.1.11:
-    resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
 
-  '@ai-sdk/gateway@1.0.15(zod@3.25.76)':
+  '@ai-sdk/gateway@1.0.15(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.7(zod@3.25.76)
-      zod: 3.25.76
+      '@ai-sdk/provider-utils': 3.0.7(zod@4.3.6)
+      zod: 4.3.6
 
-  '@ai-sdk/openai-compatible@1.0.13(zod@3.25.76)':
+  '@ai-sdk/openai-compatible@1.0.13(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.7(zod@3.25.76)
-      zod: 3.25.76
+      '@ai-sdk/provider-utils': 3.0.7(zod@4.3.6)
+      zod: 4.3.6
 
-  '@ai-sdk/provider-utils@3.0.7(zod@3.25.76)':
+  '@ai-sdk/provider-utils@3.0.7(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.0.0
       eventsource-parser: 3.0.5
-      zod: 3.25.76
+      zod: 4.3.6
 
   '@ai-sdk/provider@2.0.0':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@2.0.26(react@19.0.0-rc-45804af1-20241021)(zod@3.25.76)':
+  '@ai-sdk/react@2.0.26(react@19.0.0-rc-45804af1-20241021)(zod@4.3.6)':
     dependencies:
-      '@ai-sdk/provider-utils': 3.0.7(zod@3.25.76)
-      ai: 5.0.26(zod@3.25.76)
+      '@ai-sdk/provider-utils': 3.0.7(zod@4.3.6)
+      ai: 5.0.26(zod@4.3.6)
       react: 19.0.0-rc-45804af1-20241021
       swr: 2.3.3(react@19.0.0-rc-45804af1-20241021)
       throttleit: 2.1.0
     optionalDependencies:
-      zod: 3.25.76
+      zod: 4.3.6
 
-  '@ai-sdk/xai@2.0.13(zod@3.25.76)':
+  '@ai-sdk/xai@2.0.13(zod@4.3.6)':
     dependencies:
-      '@ai-sdk/openai-compatible': 1.0.13(zod@3.25.76)
+      '@ai-sdk/openai-compatible': 1.0.13(zod@4.3.6)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.7(zod@3.25.76)
-      zod: 3.25.76
+      '@ai-sdk/provider-utils': 3.0.7(zod@4.3.6)
+      zod: 4.3.6
 
   '@alloc/quick-lru@5.2.0': {}
 
@@ -6300,13 +6302,13 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  ai@5.0.26(zod@3.25.76):
+  ai@5.0.26(zod@4.3.6):
     dependencies:
-      '@ai-sdk/gateway': 1.0.15(zod@3.25.76)
+      '@ai-sdk/gateway': 1.0.15(zod@4.3.6)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.7(zod@3.25.76)
+      '@ai-sdk/provider-utils': 3.0.7(zod@4.3.6)
       '@opentelemetry/api': 1.9.0
-      zod: 3.25.76
+      zod: 4.3.6
 
   argparse@2.0.1: {}
 
@@ -8393,7 +8395,7 @@ snapshots:
       nypm: 0.6.2
       trpc-cli: 0.10.2(typescript@5.8.2)
       vitest: 3.2.4(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.5.1)(lightningcss@1.30.1)(tsx@4.19.3)
-      zod: 4.1.11
+      zod: 4.3.6
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@inquirer/prompts'
@@ -8636,6 +8638,6 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.1.11: {}
+  zod@4.3.6: {}
 
   zwitch@2.0.4: {}
